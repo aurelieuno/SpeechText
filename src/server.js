@@ -6,8 +6,11 @@ const express = require('express');
 const app = express();
 const watson = require('watson-developer-cloud');
 const vcapServices = require('vcap_services');
-const cors = require('cors')
+const cors = require('cors');
+const unirest = require('unirest');
+
 require('dotenv').config()
+
 // on bluemix, enable rate-limiting and force https
 // if (process.env.VCAP_SERVICES) {
 //   // enable rate-limiting
@@ -85,6 +88,8 @@ app.use('/api/text-to-speech/token', function (req, res) {
     }
   );
 });
+
+
 
 const port = process.env.PORT || process.env.VCAP_APP_PORT || 3002;
 app.listen(port, function() {

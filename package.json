@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "awesome-possum": "^3.3.0",
+    "axios": "^0.18.0",
     "cors": "^2.8.4",
     "dotenv": "^5.0.0",
     "express": "^4.16.2",
@@ -12,6 +14,7 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0",
+    "unirest": "^0.5.1",
     "vcap_services": "^0.3.4",
     "watson-developer-cloud": "^3.0.5",
     "watson-speech": "^0.34.1"
